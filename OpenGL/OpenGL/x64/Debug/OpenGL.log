@@ -1,0 +1,4 @@
+﻿  OpenGL.cpp
+C:\Users\bhoog\source\repos\OpenGL\OpenGL\OpenGL.cpp(53,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\bhoog\source\repos\OpenGL\OpenGL\OpenGL.cpp(55,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  OpenGL.vcxproj -> C:\Users\bhoog\source\repos\OpenGL\OpenGL\x64\Debug\OpenGL.exe
