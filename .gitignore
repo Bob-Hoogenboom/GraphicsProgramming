@@ -1,8 +1,8 @@
-"x64/" 
-"**/x64/" 
-"**/x64/" 
-"**/X64/" 
-"**/Debug/" 
-"**/Release/" 
-".vs/" 
-"*.vcxproj.user" 
+x64/ 
+**/x64/ 
+**/x64/ 
+**/X64/ 
+**/Debug/ 
+**/Release/ 
+.vs/
+*.vcxproj.user 
