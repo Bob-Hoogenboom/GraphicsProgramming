@@ -141,6 +141,8 @@
     <ClCompile Include="OpenGL.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="shaders\diffuseFragment.shader" />
+    <None Include="shaders\diffuseVertex.shader" />
     <None Include="shaders\fragment.shader" />
     <None Include="shaders\vertex.shader" />
   </ItemGroup>

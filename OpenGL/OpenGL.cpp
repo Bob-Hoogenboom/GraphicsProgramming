@@ -244,7 +244,7 @@ float vertices[] = {
 }
 
 void createShaders() {
-    createProgram(simpleProgram, "shaders/vertex.shader", "shaders/fragment.shader");
+    createProgram(simpleProgram, "shaders/diffuseVertex.shader", "shaders/diffuseFragment.shader");
 }
 
 void createProgram(GLuint& programID, const char* vertex, const char* fragment) {
