@@ -26,4 +26,35 @@
     <None Include="shaders\fragment.shader" />
     <None Include="shaders\vertex.shader" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="textures\container2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\dirt.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\grass.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\Heightmap2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\heightnormal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\rock.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\sand.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="textures\snow.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
 </Project>

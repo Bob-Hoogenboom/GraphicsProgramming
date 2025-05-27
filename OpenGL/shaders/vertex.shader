@@ -1,11 +1,36 @@
 #version 330 core
 layout(location = 0) in vec3 aPos;
 layout(location = 1) in vec3 vColor;
+layout(location = 2) in vec2 vUV;
+layout(location = 3) in vec3 vNormal;
+layout(location = 3) in vec3 vTangent;
+layout(location = 3) in vec3 vBitTangent;
 
 out vec3 color;
+out vec2 uv;
+out vec4 coord;
+out mat3 tbn;
+out vec3 worldPosition;
+
+uniform mat4 world;
+uniform mat4 view;
+uniform mat4 projection;
 
 void main()
 {
-	gl_Position = vec4(aPos, 1.0);
+	gl_Position = projection * view * world * vec4(aPos, 1.0);
 	color = vColor;
+
+	coord = world * vec4(aPos,1.0f);
+
+	vec3 t = normalize(mat3(world) * vTangent); 
+	vec3 b = normalize(mat3(world) * vBitTangent);
+	vec3 n = normalize(mat3(world) * vNormal);
+	tbn = mat3(t,b,n);
+
+
+	worldPosition = mat3(world) * aPos;
+
+	color = vColor;
+	uv = vUV;
 }
