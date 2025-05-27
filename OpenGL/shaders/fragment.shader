@@ -44,7 +44,7 @@ void main()
 	//#seperate RGB and RGBA calculations
 	vec4 texColor = vec4(color, 1.0) * texture(mainTex, uv);
 
-	vec3 combinedColor = texColor.rgb * lightValue + specular * dull;
+	vec3 combinedColor = texColor.rgb * lightValue + specular * gold;
 	combinedColor = clamp(combinedColor + 0.1, 0.0, 1.0);
 
 	FragColor = vec4(combinedColor, texColor);
